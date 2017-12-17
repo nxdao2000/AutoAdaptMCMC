@@ -1,0 +1,134 @@
+code
+constants
+data
+inits
+runList
+runList$crossLevel
+class(runList$crossLevel)
+runList$crossLevel <- {
+conf <- configureMCMC(oldConf = abModel$initialMCMCconf)
+conf$setSamplers()
+conf$addSampler(type = "crossLevel", target = c("a[1]", "b[1]"),
+print = FALSE)
+conf$addSampler(type = "crossLevel", target = c("a[2]", "b[2]"),
+print = FALSE)
+conf
+}
+runList$crossLevel <- quote(
+{
+conf <- configureMCMC(oldConf = abModel$initialMCMCconf)
+conf$setSamplers()
+conf$addSampler(type = "crossLevel", target = c("a[1]", "b[1]"),
+print = FALSE)
+conf$addSampler(type = "crossLevel", target = c("a[2]", "b[2]"),
+print = FALSE)
+conf
+})
+runList
+save.image("~/Downloads/autoBlock-master/data/model_ice.RData")
+runList
+runList
+code
+constants
+data
+inits
+runList
+runList[[3]]
+runList$crossLevel
+str1<-"{
+spec <- configureMCMC(oldSpec = abModel$initialMCMCspec)
+spec$setSamplers()
+spec$addSampler(type = "crossLevel", target = c('a[1]', 'b[1]'),
+print = FALSE)
+spec$addSampler(type = 'crossLevel', target = c('a[2]', 'b[2]'),
+print = FALSE)
+spec
+}\n"
+runList$crossLevel<-parse(text=str1)
+str1<-"{
+conf <- configureMCMC(oldConf = abModel$initialMCMCconf)
+conf$setSamplers()
+conf$addSampler(type = "crossLevel", target = c('a[1]', 'b[1]'),
+print = FALSE)
+conf$addSampler(type = 'crossLevel', target = c('a[2]', 'b[2]'),
+print = FALSE)
+conf
+}\n"
+runList$crossLevel<-parse(text=str1)
+str1 <- "{
+conf <- configureMCMC(oldConf = abModel$initialMCMCconf)
+conf$setSamplers()
+conf$addSampler(type = "crossLevel", target = c('a[1]', 'b[1]'),
+print = FALSE)
+conf$addSampler(type = 'crossLevel', target = c('a[2]', 'b[2]'),
+print = FALSE)
+conf
+}\n"
+str1 <- "{
+conf <- configureMCMC(oldConf = abModel$initialMCMCconf)
+conf$setSamplers()
+conf$addSampler(type = 'crossLevel', target = c('a[1]', 'b[1]'),
+print = FALSE)
+conf$addSampler(type = 'crossLevel', target = c('a[2]', 'b[2]'),
+print = FALSE)
+conf
+}\n"
+runList$crossLevel<-parse(text=str1)
+runList
+rm str1
+rm
+rm c(str1)
+?rm
+rm(list=c('str1'))
+save.image("~/Downloads/autoBlock-master/data/model_litters.RData")
+runList$crossLevel<-"{
+conf <- configureMCMC(oldConf = abModel$initialMCMCconf)
+conf$setSamplers()
+conf$addSampler(type = 'crossLevel', target = c('a[1]', 'b[1]'),
+print = FALSE)
+conf$addSampler(type = 'crossLevel', target = c('a[2]', 'b[2]'),
+print = FALSE)
+conf
+}
+"
+runList$crossLevel
+save.image("~/Downloads/autoBlock-master/data/model_litters.RData")
+runList$crossLevel<-{
+conf <- configureMCMC(oldConf = abModel$initialMCMCconf)
+conf$setSamplers()
+conf$addSampler(type = 'crossLevel', target = c('a[1]', 'b[1]'),
+print = FALSE)
+conf$addSampler(type = 'crossLevel', target = c('a[2]', 'b[2]'),
+print = FALSE)
+conf
+}
+load("/home/dao/Downloads/autoBlock-master/data/model_ice.RData")
+runList$crossLevel
+runList
+runList$crossLevel<-quote({
+conf <- configureMCMC(oldConf = abModel$initialMCMCconf)
+conf$setSamplers()
+conf$addSampler(type = 'crossLevel', target = c('a[1]', 'b[1]'),
+print = FALSE)
+conf$addSampler(type = 'crossLevel', target = c('a[2]', 'b[2]'),
+print = FALSE)
+conf
+})
+runList$crossLevel
+save.image("~/Downloads/autoBlock-master/data/model_litters.RData")
+load("/home/dao/Downloads/autoBlock-master/data/model_spatial.RData")
+code
+runList
+load("/home/dao/Downloads/autoBlock-master/data/mhp.RData")
+load("/home/dao/Downloads/autoBlock-master/data/model_SSMcorrelated.RData")
+load("/home/dao/Downloads/autoBlock-master/data/model_SSMindependent.RData")
+load("/home/dao/Downloads/autoBlock-master/data/model_test.RData")
+load("/home/dao/Downloads/autoBlock-master/data/model_redblue.RData")
+load("/home/dao/Downloads/autoBlock-master/data/model_mhp.RData")
+load("/home/dao/Downloads/autoBlock-master/data/model_SSMindependent.RData")
+load("/home/dao/Downloads/autoBlock-master/data/model_SSMindependent.RData")
+code
+runList
+runList[[2]]
+runList[[2]]<-NULL
+save.image("~/Downloads/autoBlock-master/data/model_SSMindependent.RData")
